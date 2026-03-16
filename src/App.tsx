@@ -5,6 +5,7 @@
 
 import React from 'react';
 import { motion } from 'motion/react';
+import resumePdfUrl from '../resume.pdf?url';
 import { 
   Github, 
   Linkedin, 
@@ -266,7 +267,7 @@ export default function App() {
               onPointerDown={handlePopupDragStart}
             >
               <a
-                href="/resume.pdf"
+                href={resumePdfUrl}
                 download="resume.pdf"
                 onPointerDown={(event) => event.stopPropagation()}
                 className="px-3 py-1.5 rounded border border-border bg-bg/90 text-sm mono hover:border-accent hover:text-accent transition-colors"
@@ -285,7 +286,7 @@ export default function App() {
 
             <div className="relative w-full h-full">
               <iframe
-                src="/resume.pdf#toolbar=0&navpanes=0&scrollbar=0"
+                src={`${resumePdfUrl}#toolbar=0&navpanes=0&scrollbar=0`}
                 title="Resume Preview"
                 className="absolute left-0 right-0 bottom-0 top-14 w-full h-full bg-white"
               />
