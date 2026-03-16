@@ -5,7 +5,6 @@
 
 import React from 'react';
 import { motion } from 'motion/react';
-import resumePdfUrl from '../resume.pdf?url';
 import { 
   Github, 
   Linkedin, 
@@ -116,6 +115,8 @@ const Section = ({ title, children, id, className = "" }: { title: string, child
   </section>
 );
 
+const RESUME_PDF_URL = '/Muhammad%20Rishal%20P.pdf';
+
 export default function App() {
   const [isResumeOpen, setIsResumeOpen] = React.useState(false);
   const [popupOffset, setPopupOffset] = React.useState({ x: 0, y: 0 });
@@ -165,6 +166,20 @@ export default function App() {
       originX: popupOffset.x,
       originY: popupOffset.y,
     };
+  };
+
+  const handleResumeDownload = async () => {
+    const response = await fetch(RESUME_PDF_URL);
+    const blob = await response.blob();
+    const blobUrl = URL.createObjectURL(blob);
+    const link = document.createElement('a');
+
+    link.href = blobUrl;
+    link.download = 'Muhammad Rishal P.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+    URL.revokeObjectURL(blobUrl);
   };
 
   return (
@@ -266,14 +281,14 @@ export default function App() {
               className="absolute top-3 right-3 z-10 flex justify-end gap-2 cursor-move select-none"
               onPointerDown={handlePopupDragStart}
             >
-              <a
-                href={resumePdfUrl}
-                download="resume.pdf"
+              <button
+                type="button"
+                onClick={handleResumeDownload}
                 onPointerDown={(event) => event.stopPropagation()}
                 className="px-3 py-1.5 rounded border border-border bg-bg/90 text-sm mono hover:border-accent hover:text-accent transition-colors"
               >
                 DOWNLOAD
-              </a>
+              </button>
               <button
                 type="button"
                 onClick={() => setIsResumeOpen(false)}
@@ -286,7 +301,7 @@ export default function App() {
 
             <div className="relative w-full h-full">
               <iframe
-                src={`${resumePdfUrl}#toolbar=0&navpanes=0&scrollbar=0`}
+                src={`${RESUME_PDF_URL}#toolbar=0&navpanes=0&scrollbar=0`}
                 title="Resume Preview"
                 className="absolute left-0 right-0 bottom-0 top-14 w-full h-full bg-white"
               />
