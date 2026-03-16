@@ -116,6 +116,56 @@ const Section = ({ title, children, id, className = "" }: { title: string, child
 );
 
 export default function App() {
+  const [isResumeOpen, setIsResumeOpen] = React.useState(false);
+  const [popupOffset, setPopupOffset] = React.useState({ x: 0, y: 0 });
+  const dragStateRef = React.useRef<{
+    startX: number;
+    startY: number;
+    originX: number;
+    originY: number;
+  } | null>(null);
+
+  React.useEffect(() => {
+    const handlePointerMove = (event: PointerEvent) => {
+      if (!dragStateRef.current) {
+        return;
+      }
+
+      const deltaX = event.clientX - dragStateRef.current.startX;
+      const deltaY = event.clientY - dragStateRef.current.startY;
+
+      setPopupOffset({
+        x: dragStateRef.current.originX + deltaX,
+        y: dragStateRef.current.originY + deltaY,
+      });
+    };
+
+    const handlePointerUp = () => {
+      dragStateRef.current = null;
+    };
+
+    window.addEventListener('pointermove', handlePointerMove);
+    window.addEventListener('pointerup', handlePointerUp);
+
+    return () => {
+      window.removeEventListener('pointermove', handlePointerMove);
+      window.removeEventListener('pointerup', handlePointerUp);
+    };
+  }, []);
+
+  const handlePopupDragStart = (event: React.PointerEvent<HTMLDivElement>) => {
+    if (event.button !== 0) {
+      return;
+    }
+
+    dragStateRef.current = {
+      startX: event.clientX,
+      startY: event.clientY,
+      originX: popupOffset.x,
+      originY: popupOffset.y,
+    };
+  };
+
   return (
     <div className="min-h-screen data-grid">
       {/* Navigation */}
@@ -182,7 +232,14 @@ export default function App() {
               >
                 <Linkedin size={20} />
               </a>
-              <button className="flex items-center gap-2 px-6 py-3 bg-accent text-bg font-bold rounded-full hover:opacity-90 transition-all">
+              <button
+                type="button"
+                onClick={() => {
+                  setPopupOffset({ x: 0, y: 0 });
+                  setIsResumeOpen(true);
+                }}
+                className="flex items-center gap-2 px-6 py-3 bg-accent text-bg font-bold rounded-full hover:opacity-90 transition-all"
+              >
                 <Download size={18} />
                 RESUME.PDF
               </button>
@@ -193,6 +250,49 @@ export default function App() {
         {/* Decorative elements */}
         <div className="absolute top-0 right-0 w-1/3 h-full bg-gradient-to-l from-accent/5 to-transparent pointer-events-none" />
       </header>
+
+      {isResumeOpen && (
+        <div className="fixed inset-0 z-[60] bg-black/55 backdrop-blur-sm flex items-center justify-center p-4 sm:p-6 md:p-8">
+          <div
+            className="relative border border-border rounded-2xl bg-bg/95 overflow-hidden shadow-2xl"
+            style={{
+              width: 'min(92vw, calc(88vh / 1.414))',
+              aspectRatio: '1 / 1.414',
+              transform: `translate(${popupOffset.x}px, ${popupOffset.y}px)`,
+            }}
+          >
+            <div
+              className="absolute top-3 right-3 z-10 flex justify-end gap-2 cursor-move select-none"
+              onPointerDown={handlePopupDragStart}
+            >
+              <a
+                href="/resume.pdf"
+                download="resume.pdf"
+                onPointerDown={(event) => event.stopPropagation()}
+                className="px-3 py-1.5 rounded border border-border bg-bg/90 text-sm mono hover:border-accent hover:text-accent transition-colors"
+              >
+                DOWNLOAD
+              </a>
+              <button
+                type="button"
+                onClick={() => setIsResumeOpen(false)}
+                onPointerDown={(event) => event.stopPropagation()}
+                className="px-3 py-1.5 rounded border border-border bg-bg/90 text-sm mono hover:border-accent hover:text-accent transition-colors"
+              >
+                CLOSE
+              </button>
+            </div>
+
+            <div className="relative w-full h-full">
+              <iframe
+                src="/resume.pdf#toolbar=0&navpanes=0&scrollbar=0"
+                title="Resume Preview"
+                className="absolute left-0 right-0 bottom-0 top-14 w-full h-full bg-white"
+              />
+            </div>
+          </div>
+        </div>
+      )}
 
       {/* Experience Section */}
       <Section title="Experience" id="experience">
