@@ -170,6 +170,24 @@ const RESUME_DATA = {
       highlights: ["Local IP Control", "ESP32 + Tasmota", "Cross-Platform Flutter"]
     },
     {
+      title: "AI Resume Analysis & Portfolio Generator",
+      category: "AI & Voice",
+      badge: "Full-Stack AI",
+      tech: "Python, Streamlit, LangChain, SQLite3, bcrypt",
+      description: "Parses candidate resumes, extracts skill graphs, matches job opportunities, and generates automated responsive portfolios with secure authentication.",
+      link: "https://github.com/rishalsha/Project-Mini",
+      highlights: ["LangChain Parsing", "Portfolio Generator", "Job Recommendation"]
+    },
+    {
+      title: "EasyBin — Paste & Storage Engine",
+      category: "Backend & Cloud",
+      badge: "Utility",
+      tech: "JavaScript, Node.js, Express, REST API",
+      description: "Lightweight web pastebin and payload storage service for sharing code snippets and JSON documents with instant lookup and clean API endpoints.",
+      link: "https://github.com/rishalsha/EasyBin",
+      highlights: ["Instant Sharing", "Clean REST API", "Payload Storage"]
+    },
+    {
       title: "Rumbly (Run Assembly)",
       category: "Backend & Cloud",
       badge: "Open Source",
