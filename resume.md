@@ -133,67 +133,12 @@ Computer Science &amp; Engineering undergraduate specializing in systems program
 <div class="section-title">Key Projects</div>
 <div class="item">
   <div class="item-header">
-    <span>J.A.R.V.I.S. — Voice AI Companion</span>
-    <span><a href="https://github.com/rishalsha/Jarvis" style="color: #059669; text-decoration: none;">github.com/rishalsha/Jarvis</a></span>
+    <span>Mini Project — AI-Based Portfolio Generator &amp; Job Recommendation System</span>
+    <span><a href="https://github.com/rishalsha/Project-Mini" style="color: #059669; text-decoration: none;">github.com/rishalsha/Project-Mini</a></span>
   </div>
-  <div class="tech">Python &bull; Ollama GPU (RTX 3060) &bull; Piper TTS (75ms) &bull; SQLite FTS5 RAG &bull; Web Audio HUD &bull; MQTT</div>
+  <div class="tech">Python &bull; Streamlit &bull; LangChain &bull; SQLite3 &bull; bcrypt</div>
   <ul>
-    <li>Private voice AI with local GPU inference, 75ms neural TTS, sub-1ms SQLite FTS5 memory recall, and barge-in detection.</li>
-  </ul>
-</div>
-
-<div class="item">
-  <div class="item-header">
-    <span>papr — Terminal Typesetting Engine</span>
-    <span><a href="https://crates.io/crates/papr-cli" style="color: #059669; text-decoration: none;">Crates.io: papr-cli</a></span>
-  </div>
-  <div class="tech">Rust &bull; CLI &bull; Tectonic &bull; XeTeX &bull; KaTeX</div>
-  <ul>
-    <li>Published on Crates.io: compiles Markdown, multi-file LaTeX, and plain text into publication-grade PDFs with auto package resolution.</li>
-  </ul>
-</div>
-
-<div class="item">
-  <div class="item-header">
-    <span>qmit — AI Conventional Commit CLI</span>
-    <span><a href="https://crates.io/crates/qmit" style="color: #059669; text-decoration: none;">Crates.io: qmit</a></span>
-  </div>
-  <div class="tech">Rust &bull; LLM APIs &bull; Git CLI</div>
-  <ul>
-    <li>Published on Crates.io: inspects staged Git diffs and generates standardized Conventional Commit messages (v1.0.0).</li>
-  </ul>
-</div>
-
-<div class="item">
-  <div class="item-header">
-    <span>IPadDock — Mission Control Battle Station</span>
-    <span><a href="https://github.com/rishalsha/IPadDock" style="color: #059669; text-decoration: none;">github.com/rishalsha/IPadDock</a></span>
-  </div>
-  <div class="tech">Python &bull; Mosquitto MQTT &bull; Linux Hyprland/Wayland IPC &bull; Pure ES5 SVG</div>
-  <ul>
-    <li>Repurposed iPad Gen 4 (iOS 10.3) into a permanent battle-station HUD, multi-machine stream deck, and MQTT telemetry center.</li>
-  </ul>
-</div>
-
-<div class="item">
-  <div class="item-header">
-    <span>JsonBin — Self-Hosted JSON Engine</span>
-    <span><a href="https://github.com/rishalsha/JsonBin" style="color: #059669; text-decoration: none;">github.com/rishalsha/JsonBin</a></span>
-  </div>
-  <div class="tech">FastAPI &bull; Python 3.12 &bull; SQLite WAL &bull; Docker</div>
-  <ul>
-    <li>Self-hosted JSON storage backend compatible with JSONBin.io v3 API with SQLite WAL persistence and Docker packaging.</li>
-  </ul>
-</div>
-
-<div class="item">
-  <div class="item-header">
-    <span>GPT-CLI — AI Terminal Assistant</span>
-    <span><a href="https://github.com/rishalsha/GPT-CLI" style="color: #059669; text-decoration: none;">github.com/rishalsha/GPT-CLI</a></span>
-  </div>
-  <div class="tech">Go &bull; Markdown Streaming &bull; Unix Piping &bull; LLM APIs</div>
-  <ul>
-    <li>High-speed terminal AI assistant featuring real-time Markdown streaming, multi-turn chat sessions, and Unix pipe support.</li>
+    <li>Parses candidate resumes, extracts skill graphs, matches job opportunities, and generates automated responsive portfolios.</li>
   </ul>
 </div>
 
@@ -210,12 +155,45 @@ Computer Science &amp; Engineering undergraduate specializing in systems program
 
 <div class="item">
   <div class="item-header">
-    <span>AI Resume Analysis &amp; Portfolio Generator</span>
-    <span><a href="https://github.com/rishalsha/Project-Mini" style="color: #059669; text-decoration: none;">github.com/rishalsha/Project-Mini</a></span>
+    <span>IPadDock — Mission Control Battle Station</span>
+    <span><a href="https://github.com/rishalsha/IPadDock" style="color: #059669; text-decoration: none;">github.com/rishalsha/IPadDock</a></span>
   </div>
-  <div class="tech">Python &bull; Streamlit &bull; LangChain &bull; SQLite3 &bull; bcrypt</div>
+  <div class="tech">Python &bull; Mosquitto MQTT &bull; Linux Hyprland/Wayland IPC &bull; Pure ES5 SVG</div>
   <ul>
-    <li>Parses candidate resumes, extracts skill graphs, matches job opportunities, and generates automated responsive portfolios.</li>
+    <li>Repurposed iPad Gen 4 (iOS 10.3) into a permanent battle-station HUD, multi-machine stream deck, and MQTT telemetry center.</li>
+  </ul>
+</div>
+
+<div class="item">
+  <div class="item-header">
+    <span>J.A.R.V.I.S. — Voice AI Companion</span>
+    <span><a href="https://github.com/rishalsha/Jarvis" style="color: #059669; text-decoration: none;">github.com/rishalsha/Jarvis</a></span>
+  </div>
+  <div class="tech">Python &bull; Ollama GPU (RTX 3060) &bull; Piper TTS (75ms) &bull; SQLite FTS5 RAG &bull; Web Audio HUD &bull; MQTT</div>
+  <ul>
+    <li>Private voice AI with local GPU inference, 75ms neural TTS, sub-1ms SQLite FTS5 memory recall, and barge-in detection.</li>
+  </ul>
+</div>
+
+<div class="item">
+  <div class="item-header">
+    <span>qmit — AI Conventional Commit CLI</span>
+    <span><a href="https://crates.io/crates/qmit" style="color: #059669; text-decoration: none;">Crates.io: qmit</a></span>
+  </div>
+  <div class="tech">Rust &bull; LLM APIs &bull; Git CLI</div>
+  <ul>
+    <li>Published on Crates.io: inspects staged Git diffs and generates standardized Conventional Commit messages (v1.0.0).</li>
+  </ul>
+</div>
+
+<div class="item">
+  <div class="item-header">
+    <span>GPT-CLI — AI Terminal Assistant</span>
+    <span><a href="https://github.com/rishalsha/GPT-CLI" style="color: #059669; text-decoration: none;">github.com/rishalsha/GPT-CLI</a></span>
+  </div>
+  <div class="tech">Go &bull; Markdown Streaming &bull; Unix Piping &bull; LLM APIs</div>
+  <ul>
+    <li>High-speed terminal AI assistant featuring real-time Markdown streaming, multi-turn chat sessions, and Unix pipe support.</li>
   </ul>
 </div>
 
@@ -227,5 +205,27 @@ Computer Science &amp; Engineering undergraduate specializing in systems program
   <div class="tech">JavaScript &bull; Node.js &bull; REST API</div>
   <ul>
     <li>Lightweight pastebin and payload storage service for sharing code snippets and JSON documents with instant lookup.</li>
+  </ul>
+</div>
+
+<div class="item">
+  <div class="item-header">
+    <span>papr — Terminal Typesetting Engine</span>
+    <span><a href="https://crates.io/crates/papr-cli" style="color: #059669; text-decoration: none;">Crates.io: papr-cli</a></span>
+  </div>
+  <div class="tech">Rust &bull; CLI &bull; Tectonic &bull; XeTeX &bull; KaTeX</div>
+  <ul>
+    <li>Published on Crates.io: compiles Markdown, multi-file LaTeX, and plain text into publication-grade PDFs with auto package resolution.</li>
+  </ul>
+</div>
+
+<div class="item">
+  <div class="item-header">
+    <span>JsonBin — Self-Hosted JSON Engine</span>
+    <span><a href="https://github.com/rishalsha/JsonBin" style="color: #059669; text-decoration: none;">github.com/rishalsha/JsonBin</a></span>
+  </div>
+  <div class="tech">FastAPI &bull; Python 3.12 &bull; SQLite WAL &bull; Docker</div>
+  <ul>
+    <li>Self-hosted JSON storage backend compatible with JSONBin.io v3 API with SQLite WAL persistence and Docker packaging.</li>
   </ul>
 </div>

@@ -87,6 +87,33 @@ const RESUME_DATA = {
   },
   projects: [
     {
+      title: "Mini Project — AI Based Portfolio Generator and Job Recommendation System",
+      category: "AI & Voice",
+      badge: "Full-Stack AI",
+      tech: "Python, Streamlit, LangChain, SQLite3, bcrypt",
+      description: "Parses candidate resumes, extracts skill graphs, matches job opportunities, and generates automated responsive portfolios with secure authentication.",
+      link: "https://github.com/rishalsha/Project-Mini",
+      highlights: ["LangChain Parsing", "Portfolio Generator", "Job Recommendation"]
+    },
+    {
+      title: "ghcli — GitHub Management TUI",
+      category: "Systems & CLI",
+      badge: "Terminal UI",
+      tech: "Rust, Ratatui, GitHub REST API",
+      description: "Fast terminal-based user interface for browsing, creating, cloning, searching, and managing GitHub repositories with interactive keyboard navigation directly from the shell.",
+      link: "https://github.com/rishalsha/GitHubCLI",
+      highlights: ["Full Repo Lifecycle", "Ratatui TUI", "Keyboard Driven"]
+    },
+    {
+      title: "IPadDock — Mission Control Station",
+      category: "Hardware & IoT",
+      badge: "Hardware Hack",
+      tech: "Python, Mosquitto MQTT, Linux Hyprland/Wayland, Pure ES5 SVG",
+      description: "Hardware & software setup repurposing a retired iPad Gen 4 (iOS 10.3 / WebKit 602) into a dedicated mission-control battlestation dashboard, smart home controller, multi-machine stream deck, and cross-device clipboard bridge.",
+      link: "https://github.com/rishalsha/IPadDock",
+      highlights: ["Legacy iOS 10.3 Support", "MQTT Telemetry", "Hyprland Wayland IPC"]
+    },
+    {
       title: "J.A.R.V.I.S. — Voice AI Companion",
       category: "AI & Voice",
       badge: "Flagship",
@@ -94,16 +121,6 @@ const RESUME_DATA = {
       description: "100% private, local voice-interactive personal AI assistant with local RTX 3060 GPU inference, ultra-low-latency in-memory speech synthesis (~75ms Piper TTS), real-time RAG memory vault (<1ms BM25 recall), conversational barge-in detection, and integrated smart home IoT control.",
       link: "https://github.com/rishalsha/Jarvis",
       highlights: ["Local GPU Inference", "Sub-1ms Memory Recall", "Real-Time Barge-In"]
-    },
-    {
-      title: "papr — Terminal Typesetting Engine",
-      category: "Systems & CLI",
-      badge: "Crates.io",
-      tech: "Rust, Tectonic, XeTeX, KaTeX, CLI",
-      description: "Lightning-fast CLI tool to compile Markdown, LaTeX, and plain text files into publication-grade PDFs directly inside the terminal. Supports full GitHub Flavored Markdown, embedded KaTeX math, multi-file LaTeX projects, and automatic package resolution.",
-      link: "https://github.com/rishalsha/papr",
-      crateLink: "https://crates.io/crates/papr-cli",
-      highlights: ["Published on Crates.io", "Zero-Config PDF Generation", "Multi-file LaTeX"]
     },
     {
       title: "qmit — AI Conventional Commit CLI",
@@ -116,15 +133,6 @@ const RESUME_DATA = {
       highlights: ["Published on Crates.io", "Git Diff Inspection", "Conventional Commits v1.0"]
     },
     {
-      title: "SpeedTest CLI & Ratatui TUI",
-      category: "Systems & CLI",
-      badge: "Terminal UI",
-      tech: "Rust, Ratatui, Crossterm, Tokio Async",
-      description: "High-performance network benchmark suite and real-time latency monitor written in Rust. Features a rich Ratatui terminal UI with live throughput graphs, alongside headless CLI modes supporting JSON and CSV exports across Linux, macOS, and Windows.",
-      link: "https://github.com/rishalsha/SpeedTest",
-      highlights: ["Interactive TUI Graphs", "Async Tokio Engine", "Cross-Platform Binaries"]
-    },
-    {
       title: "gpt-cli — AI Terminal Assistant",
       category: "AI & Voice",
       badge: "CLI Tool",
@@ -132,6 +140,25 @@ const RESUME_DATA = {
       description: "Lightning-fast terminal AI companion in Go featuring real-time Markdown response streaming, multi-provider presets, interactive multi-turn chats, clipboard synchronization, and seamless Unix piping integration.",
       link: "https://github.com/rishalsha/GPT-CLI",
       highlights: ["Real-Time Streaming", "Unix Pipes Compatible", "Multi-Provider"]
+    },
+    {
+      title: "EasyBin — Paste & Storage Engine",
+      category: "Backend & Cloud",
+      badge: "Utility",
+      tech: "JavaScript, Node.js, Express, REST API",
+      description: "Lightweight web pastebin and payload storage service for sharing code snippets and JSON documents with instant lookup and clean API endpoints.",
+      link: "https://github.com/rishalsha/EasyBin",
+      highlights: ["Instant Sharing", "Clean REST API", "Payload Storage"]
+    },
+    {
+      title: "papr — Terminal Typesetting Engine",
+      category: "Systems & CLI",
+      badge: "Crates.io",
+      tech: "Rust, Tectonic, XeTeX, KaTeX, CLI",
+      description: "Lightning-fast CLI tool to compile Markdown, LaTeX, and plain text files into publication-grade PDFs directly inside the terminal. Supports full GitHub Flavored Markdown, embedded KaTeX math, multi-file LaTeX projects, and automatic package resolution.",
+      link: "https://github.com/rishalsha/papr",
+      crateLink: "https://crates.io/crates/papr-cli",
+      highlights: ["Published on Crates.io", "Zero-Config PDF Generation", "Multi-file LaTeX"]
     },
     {
       title: "JsonBin — Self-Hosted JSON Engine",
@@ -143,22 +170,13 @@ const RESUME_DATA = {
       highlights: ["JSONBin.io v3 Drop-in", "SQLite WAL Engine", "Docker Ready"]
     },
     {
-      title: "IPadDock — Mission Control Station",
-      category: "Hardware & IoT",
-      badge: "Hardware Hack",
-      tech: "Python, Mosquitto MQTT, Linux Hyprland/Wayland, Pure ES5 SVG",
-      description: "Hardware & software setup repurposing a retired iPad Gen 4 (iOS 10.3 / WebKit 602) into a dedicated mission-control battlestation dashboard, smart home controller, multi-machine stream deck, and cross-device clipboard bridge.",
-      link: "https://github.com/rishalsha/IPadDock",
-      highlights: ["Legacy iOS 10.3 Support", "MQTT Telemetry", "Hyprland Wayland IPC"]
-    },
-    {
-      title: "ghcli — GitHub Management TUI",
+      title: "SpeedTest CLI & Ratatui TUI",
       category: "Systems & CLI",
       badge: "Terminal UI",
-      tech: "Rust, Ratatui, GitHub REST API",
-      description: "Fast terminal-based user interface for browsing, creating, cloning, searching, and managing GitHub repositories with interactive keyboard navigation directly from the shell.",
-      link: "https://github.com/rishalsha/GitHubCLI",
-      highlights: ["Full Repo Lifecycle", "Ratatui TUI", "Keyboard Driven"]
+      tech: "Rust, Ratatui, Crossterm, Tokio Async",
+      description: "High-performance network benchmark suite and real-time latency monitor written in Rust. Features a rich Ratatui terminal UI with live throughput graphs, alongside headless CLI modes supporting JSON and CSV exports across Linux, macOS, and Windows.",
+      link: "https://github.com/rishalsha/SpeedTest",
+      highlights: ["Interactive TUI Graphs", "Async Tokio Engine", "Cross-Platform Binaries"]
     },
     {
       title: "Smart Home Automation – Habitat",
@@ -168,24 +186,6 @@ const RESUME_DATA = {
       description: "Custom IoT smart home automation system powered by ESP32 microcontrollers and Tasmota firmware. Features a cross-platform Flutter client for zero-latency local IP control alongside voice assistant bridging.",
       link: "https://github.com/rishalsha/Habitat",
       highlights: ["Local IP Control", "ESP32 + Tasmota", "Cross-Platform Flutter"]
-    },
-    {
-      title: "AI Resume Analysis & Portfolio Generator",
-      category: "AI & Voice",
-      badge: "Full-Stack AI",
-      tech: "Python, Streamlit, LangChain, SQLite3, bcrypt",
-      description: "Parses candidate resumes, extracts skill graphs, matches job opportunities, and generates automated responsive portfolios with secure authentication.",
-      link: "https://github.com/rishalsha/Project-Mini",
-      highlights: ["LangChain Parsing", "Portfolio Generator", "Job Recommendation"]
-    },
-    {
-      title: "EasyBin — Paste & Storage Engine",
-      category: "Backend & Cloud",
-      badge: "Utility",
-      tech: "JavaScript, Node.js, Express, REST API",
-      description: "Lightweight web pastebin and payload storage service for sharing code snippets and JSON documents with instant lookup and clean API endpoints.",
-      link: "https://github.com/rishalsha/EasyBin",
-      highlights: ["Instant Sharing", "Clean REST API", "Payload Storage"]
     },
     {
       title: "Rumbly (Run Assembly)",
