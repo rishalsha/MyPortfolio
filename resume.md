@@ -46,7 +46,7 @@ li { margin-bottom: 1px; }
 
 <div class="section-title">Professional Summary</div>
 <p style="margin: 0; font-size: 8.4pt; text-align: justify;">
-Computer Science &amp; Engineering undergraduate specializing in systems programming, local AI &amp; RAG architectures, terminal tooling, and embedded IoT. Proficient in Python, TypeScript, C/C++, and Java, with hands-on experience in full-stack architectures, low-level system implementations, and government IT operations.
+Computer Science &amp; Engineering undergraduate specializing in systems programming, local AI &amp; RAG architectures, terminal tooling, and embedded IoT. Proficient in Python, C/C++, Java, Dart, and JS/TS, with hands-on experience in full-stack architectures, low-level system implementations, and government IT operations.
 </p>
 
 <div class="section-title">Education</div>
@@ -124,7 +124,7 @@ Computer Science &amp; Engineering undergraduate specializing in systems program
 
 <div class="section-title">Technical Skills</div>
 <ul style="margin: 2px 0 2px 14px;">
-  <li><strong>Languages:</strong> Python, TypeScript, C / C++, Java, SQL, NASM Assembly</li>
+  <li><strong>Languages:</strong> Python, C / C++, Java, Dart, JS/TS, SQL, NASM Assembly</li>
   <li><strong>Systems &amp; AI:</strong> Local LLMs (Ollama GPU), SQLite FTS5 RAG, Piper TTS (ONNX), Web Audio API, Ratatui TUI</li>
   <li><strong>Backend &amp; Cloud:</strong> FastAPI, Node.js, Express.js, REST APIs, Docker, SQLite (WAL Mode), PostgreSQL</li>
   <li><strong>Hardware &amp; IoT:</strong> ESP32, Tasmota, MQTT (Mosquitto), Linux (Hyprland / Wayland), Embedded C, Flutter</li>

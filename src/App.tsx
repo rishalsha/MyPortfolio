@@ -34,7 +34,7 @@ const RESUME_DATA = {
   website: "rishal.me",
   github: "github.com/rishalsha",
   linkedin: "linkedin.com/in/muhammad-rishal",
-  summary: "Computer Science & Engineering undergraduate specializing in systems programming, local AI & RAG architectures, terminal tooling, and embedded IoT. Proficient in Python, TypeScript, C/C++, and Java, with hands-on experience in full-stack architectures and low-level system implementations.",
+  summary: "Computer Science & Engineering undergraduate specializing in systems programming, local AI & RAG architectures, terminal tooling, and embedded IoT. Proficient in Python, C/C++, Java, Dart, and JS/TS, with hands-on experience in full-stack architectures and low-level system implementations.",
   education: [
     {
       institution: "Government Engineering College, Kannur",
@@ -80,7 +80,7 @@ const RESUME_DATA = {
     }
   ],
   skills: {
-    languages: ["Python", "TypeScript", "C / C++", "Java", "SQL", "NASM Assembly"],
+    languages: ["Python", "C / C++", "Java", "Dart", "JS / TS", "SQL", "NASM Assembly"],
     systemsAndAi: ["Local LLMs (Ollama)", "RAG & Vector Search (SQLite FTS5)", "Piper TTS (ONNX)", "Ratatui TUI", "Tokio Async"],
     backend: ["FastAPI", "Node.js", "Express.js", "REST APIs", "Docker", "SQLite (WAL)", "PostgreSQL"],
     hardwareAndIot: ["ESP32 / Tasmota", "MQTT (Mosquitto)", "Linux (Hyprland / Wayland)", "Embedded C", "Flutter"]
